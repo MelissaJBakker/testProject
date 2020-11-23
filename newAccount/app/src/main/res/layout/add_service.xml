@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Name:" />
+
+        <EditText
+            android:id="@+id/serviceName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="Enter Service Name"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/requiredInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Required Information" />
+
+        <CheckBox
+            android:id="@+id/reqFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/reqLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Last Name" />
+
+        <CheckBox
+            android:id="@+id/reqDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/reqAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/reqLicenseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="License Type"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/requiredDocs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Required Documents"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/reqResidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proof of Residence"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/reqStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proof of Status"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/reqCustomerPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photo of Customer"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"/>
+
+            <EditText
+                android:id="@+id/servicePrice"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Enter Price"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Create Service" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

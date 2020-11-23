@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/edit_services"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/edit"
+        android:textColor="#000000"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name" />
+
+    <TextView
+        android:id="@+id/price_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:hint="Enter price" />
+
+    <TextView
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/RInfo"
+        android:textColor="#000000" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Firstname_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/first_name" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Lastname_switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/last_name" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/DOB_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/date_of_birth" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Address_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/street_address" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/License_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/license_type" />
+
+    <TextView
+        android:id="@+id/docs_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/RDocs"
+        android:textColor="#000000" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Photo_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/customer_photo" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Residence_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/proof_residence" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Status_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/proof_status" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/buttonDeleteService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

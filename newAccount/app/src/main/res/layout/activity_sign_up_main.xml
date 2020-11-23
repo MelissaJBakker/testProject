@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpMain">
+
+    <Button
+        android:id="@+id/userSignUpBtn"
+        android:layout_width="166dp"
+        android:layout_height="64dp"
+        android:background="@drawable/btn_rounded"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toTopOf="@+id/LogInLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserLabel" />
+
+    <Button
+        android:id="@+id/logInBtn"
+        android:layout_width="163dp"
+        android:layout_height="71dp"
+        android:background="@drawable/btn_rounded"
+        android:gravity="center"
+        android:text="@string/log_in"
+        app:layout_constraintBottom_toTopOf="@+id/empSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogInLabel" />
+
+    <Button
+        android:id="@+id/empSignUpBtn"
+        android:layout_width="178dp"
+        android:layout_height="61dp"
+        android:background="@drawable/btn_rounded"
+        android:gravity="center"
+        android:text="@string/employee_portal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empSignUp"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/empSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/registering_as_an_employee"
+        app:layout_constraintBottom_toTopOf="@+id/empSignUpBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInBtn" />
+
+    <TextView
+        android:id="@+id/LogInLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/already_have_an_account"
+        app:layout_constraintBottom_toTopOf="@+id/logInBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSignUpBtn" />
+
+    <TextView
+        android:id="@+id/newUserLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ready_to_make_a_new_user_account"
+        app:layout_constraintBottom_toTopOf="@+id/userSignUpBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
