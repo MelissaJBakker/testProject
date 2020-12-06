@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ServiceRequests"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_service_request_list_scene"
+    tools:context=".ServiceRequestList">
+
+    <TextView
+        android:id="@+id/requestsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/unchecked_service_requests"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
+    <ListView
+        android:id="@+id/requestsList"
+        android:layout_width="match_parent"
+        android:layout_height="526dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/home"
+        tools:layout_marginLeft="5dp" />
+</LinearLayout>
